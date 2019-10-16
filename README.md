@@ -1,6 +1,6 @@
 # Compose Volume Test
 
-Example of sharing application code from one container into another at runtime.
+Example of sharing application code from one container to another.
 
 ## Usage
 
@@ -8,11 +8,9 @@ Example of sharing application code from one container into another at runtime.
 
 ```docker-compose up -d --build```
 
-### View
-
 Navigate to: http://localhost
 
-Defaults to port 80, change in `docker-compose.yml` if needed.
+Defaults to port 80, change in [docker-compose.yml](./docker-compose.yml) if needed.
 
 ### Clean Up
 
