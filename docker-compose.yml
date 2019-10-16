@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+    src:
+        build: ./src
+        volumes:
+            - app:/app
+        
+    web:
+        image: httpd
+        volumes:
+            - app:/usr/local/apache2/htdocs
+        ports:
+            - 80:80
+        depends_on: 
+            - src
+
+volumes:
+    app:
+    
